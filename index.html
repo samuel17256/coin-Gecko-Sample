@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Gecko</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://kit.fontawesome.com/802757136e.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+ <body>
+    <!--nav bar-->
+    <nav>
+      <div class="nav-bar">
+       <p>Coins: <a href="#"> 15,134</a></p>
+       <p> Exchanges: <a href="#"> 1,151</a></p>
+       <p>Market Cap: <a href="#"> $3.133T</a></p>
+       <i class="fa-solid fa-caret-up rounded-180" style="color: green;"></i>
+       <p style="color: green;">7.5%</p>
+       <p>24h Vol: <a href="#">$428.167B</a></p>
+       <p> Dominance: <a href="#">BTC 56.3%</a></p>   
+       <p><img src="images/ethereum.jpeg" width="20px"> Gas: 24.082 GWEI</p>
+          <!--nav btn-->
+        <div class="nav-button">
+          <button class="fa-solid fa-gear" id="btn1"></button>
+          <button id="btn2">login</button>
+          <button id="btn3">sign up</button>
+        </div>
+      </div>
+        <hr style="color: #fdfbfd; height: 1px; background: white; filter: blur(0.5px);">
+         <!--coingecko-->
+      <div class="crypto-menu">
+          <div class="menu">
+           <img src="images/coingecko-logo-8903d34ce19ca4be1c81f0db30e924154750d208683fad7ae6f2ce06c76d0a56.webp" alt="coingecko">
+           <div class="crypto-link">
+              <a href="#">Cryptocurrencies</a>
+              <a style="padding-left: 30px;" href="#">Exchanges </a>
+              <a href="#">NFT </a>
+              <a href="#">Learn </a>         
+              <a href="#">Products</a>
+
+              <div class="coingecko-icon">
+                <img style="width: 20px; height: 20px;" src="https://static.coingecko.com/s/candy_notification-62af2d17629b138154e3fac22a492b51d914d18461f9283ae4bd5ad5730d8763.svg" alt="">
+                 <p style="color: black;">candy</p>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                 <p style="color: black;">Portfolio</p>
+                 <input type="text" class="search" placeholder="search                                 /">
+             </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <hr style="color: #fdfbfd; height: 1px; background: white; filter: blur(0.5px);">
+    <!--section-->
+    <section>
+     <div class="price">
+          <h1>Cryptocurrency Prices by Market Cap</h1>
+           <p>The global cryptocurrency market cap today is $3.14 Trillion, a <i class="fa-solid fa-caret-up rounded-180" style="color: green;"></i><p style="color: green;">7.3%</p><p>change in the last 24 hours.</p><a href="#" style="text-decoration: underline;">Read more</a></p> 
+           <div class="high">
+             <p style="color: black;">Highlights</p>
+             <img style="width: 40px; height: 30px;  position: relative;" src="switch.png" >
+           </div>
+      </div>
+    </section>
+           <!--main table-->
+      <div class="main">
+        <div style="padding: 10px; background-color: lightgreen; color: green; border-radius: 5px; height: 10px;" class="main-head">
+          <i class="fas fa-ranking-star"></i>All
+        </div>
+        <div class="main-head" style="display: block; padding: 10px; right: 4px;">
+            <i class="fas fa-list-ol"></i>Highlights
+        </div>
+        <div  class="main-head"  style="display: block; padding: 2px; right: 4px;">
+          <img src="https://miro.medium.com/v2/resize:fit:400/0*RwqGm887tStAjYXs.jpg" style="width: 20px; height: 20px; padding-left: 10px; display: inline;">Pump.fun Ecosystem 
+          <i class="fas fa-external-link"></i>
+        </div>
+        <!-- <hr style="color: #fdfbfd;"> -->
+        <div  class="main-head"  style="display: block; padding: 10px; right: 4px; left: 9px;">
+          <i class="fas fa-shapes"></i>Categories
+        </div>
+        <div  class="main-head"  style="display: block; padding: 10px; right: 4px;">
+          🔥 Pump.fun Ecosystem 
+        </div>       
+        <div  class="main-head"  style="display: block; padding: 10px; right: 4px;">
+          🔥 Zoo-Themed 
+        </div>
+        <div  class="main-head"  style="display: block; padding: 10px; right: 4px;">
+            🔥 Solana Meme 
+        </div>
+        <div style="position: relative; padding-left: 250px;">
+            <button style="font-family: Arial; font-size: -2.5rem;"><img src="https://thumbs.dreamstime.com/b/sparkle-vector-icon-isolated-transparent-background-transparency-concept-can-be-used-web-mobile-127340323.jpg" style="width: 16px; height: 15px;"> Customise</button>
+        </div>
+     </div>
+      <hr style="color: #A9B0C1; border: none; height: 1px; background-color: #A9B0C1; filter: blur(0.5px);">
+     <!--table of coins-->
+    <table>
+      <div class="table-head">
+        <tr>
+          <th><i class="fa-solid fa-caret-up"></i>#</th>
+          <th style="padding-left: 20px;">Coin</th>
+          <th style="padding-left: 50px"></th>
+          <th style="padding-left: 50px;">Price</th>
+          <th style="padding-left: 50px;">1h</th>
+          <th style="padding-left: 50px;">24h</th>
+          <th style="padding-left: 50px">7d</th>
+          <th style="padding-left: 50px">24h Volume</th>
+          <th style="padding-left: 50px">Market Cap</th>
+          <th style="padding-left: 50px">Last 7 Days </th>
+        </tr>
+      </div>
+      <div class="table-one">
+      <tr>
+          <td><i class="far fa-star"></i><p>1</p></td>
+          <td style="padding-left: 20px;"><img src="images/bitcoin.webp" alt="bitcoin" width="20px" height="20px">
+            <span>Bitcoin<span style="color: gray;">BTC</span></span>
+          </td>
+          <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+          <td style="padding-left: 50px"><span>$89,175.35</span></td>
+          <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: red;"></i><span style="color: red;">2.0%</span></td>
+          <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: green;"></i><span style="color: green;">3.5%</span></td>
+          <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: green;"></i><span style="color: green;">19.0%</span></td>
+          <td style="padding-left: 50px"><span>$55,659,678,629</span></td>
+          <td style="padding-left: 50px"><span>$125,126,052,542</span></td>
+          <td style="padding-left: 50px"><img class="chart-img" src=" https://www.coingecko.com/coins/1/sparkline.svg" alt=""></td>
+      </tr>
+    </div>
+    <div class="table-one">
+     <tr>
+        <td><i class="far fa-star"></i><p>2</p></td>
+        <td style="padding-left: 20px;"><img src="images/ethereum.jpeg" alt="bitcoin" width="20px" height="20px">
+          <span>Ethereum<span style="color:gray;">ETH</span></span>
+        </td>
+        <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+        <td style="padding-left: 50px"><span>$89,175.35</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down"></i><span>2.0%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down"></i><span>2.5%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-up"></i><span>19.0%</span></td>
+        <td style="padding-left: 50px"><span>$36,097,179,901</span></td>
+        <td style="padding-left: 50px"><span>$380,166,011,769	</span></td>
+        <td style="padding-left: 50px"><img class="chart-img" src=" https://www.coingecko.com/coins/1/sparkline.svg" alt=""></td>
+     </tr>
+    </div>
+    <div class="table-one">
+    <tr>
+        <td><i class="far fa-star"></i><p>3</p></td>
+        <td style="padding-left: 20px;"><img src="images/Tether.webp" alt="bitcoin" width="20px" height="20px">
+          <span>Tether<span style="color: gray;">USDT</span></span>
+        </td>
+        <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+        <td style="padding-left: 50px"><span>$1.00</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: red;"></i><span style="color: red;">0.0%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: green;"></i><span style="color: green;">3.1%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: green;"></i><span style="color: green;">19.0%</span></td>
+        <td style="padding-left: 50px"><span>$103,771,547,731</span></td>
+        <td style="padding-left: 50px"><span>$127,612,100,629</span></td>
+        <td style="padding-left: 50px"><img class="chart-img" src="https://www.coingecko.com/coins/325/sparkline.svg"alt=""></td>
+    </tr>
+  </div>
+  <div class="table-one">
+   <tr>
+      <td><i class="far fa-star"></i><p>4</p></td>
+      <td style="padding-left: 20px;"><img src="images/solana.webp" alt="bitcoin" width="20px" height="20px">
+        <span>Solana<span style="color: gray;">SOL</span></span>
+      </td>
+      <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+      <td style="padding-left: 50px"><span>$239.84</span></td>
+      <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: red;"></i><span style="color: red;">0.1%</span></td>
+      <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: green;"></i><span style="color: green;">0.9%</span></td>
+      <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: green;"></i><span style="color: green;">8.8%	</span></td>
+      <td style="padding-left: 50px"><span>$10,987,294,848</span></td>
+      <td style="padding-left: 50px"><span>$113,849,056,612</span></td>
+      <td style="padding-left: 50px"><img class="chart-img" src="https://www.coingecko.com/coins/4128/sparkline.svg" alt=""></td>
+    </tr>
+  </div>  
+  <div class="table-one">
+    <tr>
+        <td><i class="far fa-star"></i><p>5</p></td>
+        <td style="padding-left: 20px;"><img src="images/bnb-icon2_2x.webp" alt="bitcoin" width="20px" height="20px">
+          <span>BNB<span style="color: gray;">BNB</span></span>
+        </td>
+        <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+        <td style="padding-left: 50px"><span>$619.09</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: red;"></i><span style="color: red;">0.2%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: green;"></i><span style="color: green;">0.1%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: rgb(223, 18, 28);"></i><span style="color: red;">5.8%	</span></td>
+        <td style="padding-left: 50px"><span>$1,655,772,154</span></td>
+        <td style="padding-left: 50px"><span>$90,447,515,828</span></td>
+        <td style="padding-left: 50px"><img class="chart-img" src="https://www.coingecko.com/coins/825/sparkline.svg" alt=""></td>
+    </tr>
+  </div>  
+  <div class="table-one">
+    <tr>
+        <td><i class="far fa-star"></i><p>6</p></td>
+        <td style="padding-left: 20px;"><img src="images/xrp-symbol-white-128.webp" alt="bitcoin" width="20px" height="20px">
+          <span>XRP<span style="color: gray;">XRP</span></span>
+        </td>
+        <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+        <td style="padding-left: 50px"><span>$1.12</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: red;"></i><span style="color: red;">0.1%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: green;"></i><span style="color: green;">4.2%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: rgb(30, 170, 77);"></i><span style="color: rgb(15, 173, 55);">81.6%</span></td>
+        <td style="padding-left: 50px"><span>$10,967,493,360</span></td>
+        <td style="padding-left: 50px"><span>$63,735,462,084</span></td>
+        <td style="padding-left: 50px"><img class="chart-img" src="https://www.coingecko.com/coins/44/sparkline.svg" alt=""></td>
+    </tr>
+  </div> 
+  <div class="table-one">
+    <tr>
+        <td><i class="far fa-star"></i><p>7</p></td>
+        <td style="padding-left: 20px;"><img src="images/dogecoin.webp" alt="bitcoin" width="20px" height="20px">
+          <span>Dogecoin<span style="color: gray;">DOGE</span></span>
+        </td>
+        <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+        <td style="padding-left: 50px"><span>$0.3695</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: red;"></i><span style="color: red;">1.3%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: green;"></i><span style="color: green;">1.4%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: rgb(30, 170, 77);"></i><span style="color: rgb(15, 173, 55);">7.6%</span></td>
+        <td style="padding-left: 50px"><span>$9,510,484,140</span></td>
+        <td style="padding-left: 50px"><span>$54,658,724,162</span></td>
+        <td style="padding-left: 50px"><img class="chart-img" src="https://www.coingecko.com/coins/5/sparkline.svg" alt=""></td>
+    </tr>
+  </div> 
+  <div class="table-one">
+    <tr>
+        <td><i class="far fa-star"></i><p>8</p></td>
+        <td style="padding-left: 20px;"><img src="images/usdc.webp" alt="bitcoin" width="20px" height="20px">
+          <span>USDC<span style="color: gray;">USDC</span></span>
+        </td>
+        <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+        <td style="padding-left: 50px"><span>$1</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: red;"></i><span style="color: red;">0.1%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: green;"></i><span style="color: green;">0.1%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: rgb(30, 170, 77);"></i><span style="color: rgb(15, 173, 55);">70.2%</span></td>
+        <td style="padding-left: 50px"><span>$9,103,197,802</span></td>
+        <td style="padding-left: 50px"><span>$37,341,894,046</span></td>
+        <td style="padding-left: 50px"><img class="chart-img" src="https://www.coingecko.com/coins/6319/sparkline.svg" alt=""></td>
+    </tr>
+  </div> 
+  <div class="table-one">
+    <tr>
+        <td><i class="far fa-star"></i><p>9</p></td>
+        <td style="padding-left: 20px;"><img src="images/steth_logo.webp" alt="bitcoin" width="20px" height="20px">
+          <span>LidoSE<span style="color: gray;">STETH</span></span>
+        </td>
+        <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+        <td style="padding-left: 50px"><span>$3,200.14</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: rgb(37, 201, 45);"></i><span style="color: rgb(37, 201, 45);">1.5%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: green;"></i><span style="color: green;">4.0%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: rgb(223, 11, 11);"></i><span style="color: rgb(235, 8, 8);">4.4%</span></td>
+        <td style="padding-left: 50px"><span>$109,149,394</span></td>
+        <td style="padding-left: 50px"><span>$31,436,561,104</span></td>
+        <td style="padding-left: 50px"><img class="chart-img" src="https://www.coingecko.com/coins/13442/sparkline.svg" alt=""></td>
+    </tr>
+   </div> 
+   <div class="table-one">
+    <tr>
+        <td><i class="far fa-star"></i><p>10</p></td>
+        <td style="padding-left: 20px;"><img src="images/cardano.webp" alt="bitcoin" width="20px" height="20px">
+          <span>Cardano<span style="color: gray;">ADA</span></span>
+        </td>
+        <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+        <td style="padding-left: 50px"><span>$0.202</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: rgb(37, 201, 45);"></i><span style="color: rgb(37, 201, 45);">0.0%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: green;"></i><span style="color: green;">1.0%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: rgb(89, 223, 11);"></i><span style="color: rgb(61, 235, 8);">	20.8%</span></td>
+        <td style="padding-left: 50px"><span>$989,507,988</span></td>
+        <td style="padding-left: 50px"><span>	$17,460,092,435</span></td>
+        <td style="padding-left: 50px"><img class="chart-img" src="https://www.coingecko.com/coins/1094/sparkline.svg" alt=""></td>
+     </tr>
+    </div> 
+    <div class="table-one">
+     <tr>
+        <td><i class="far fa-star"></i><p>11</p></td>
+        <td style="padding-left: 20px;"><img src="images/tron-logo.webp" alt="bitcoin" width="20px" height="20px">
+          <span>TRON<span style="color: gray;">TRX</span></span>
+        </td>
+        <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+        <td style="padding-left: 50px"><span>$0.2024</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: rgb(37, 201, 45);"></i><span style="color: rgb(37, 201, 45);">0.2%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: green;"></i><span style="color: green;">0.2%</span></td>
+        <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: rgb(223, 11, 11);"></i><span style="color: rgb(235, 8, 8);">20.5%</span></td>
+        <td style="padding-left: 50px"><span>$985,969,238</span></td>
+        <td style="padding-left: 50px"><span>$17,473,978,436</span></td>
+        <td style="padding-left: 50px"><img class="chart-img" src="https://www.coingecko.com/coins/1094/sparkline.svg" alt=""></td>
+     </tr>
+    </div>  
+    <div class="table-one">
+      <tr>
+         <td><i class="far fa-star"></i><p>12</p></td>
+         <td style="padding-left: 20px;"><img src="images/shiba.webp" alt="bitcoin" width="20px" height="20px">
+           <span>ShibaInu<span style="color: gray;">SHIB</span></span>
+         </td>
+         <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+         <td style="padding-left: 50px"><span>$0.00002464</span></td>
+         <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: rgb(37, 201, 45);"></i><span style="color: rgb(37, 201, 45);">0.4%</span></td>
+         <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: green;"></i><span style="color: green;">0.0%</span></td>
+         <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: rgb(223, 11, 11);"></i><span style="color: rgb(235, 8, 8);">10.2%</span></td>
+         <td style="padding-left: 50px"><span>$2,015,188,712	</span></td>
+         <td style="padding-left: 50px"><span>$14,534,160,180</span></td>
+         <td style="padding-left: 50px"><img class="chart-img" src="https://www.coingecko.com/coins/11939/sparkline.svg" alt=""></td>
+      </tr>
+    </div>
+    <div class="table-one">
+      <tr>
+         <td><i class="far fa-star"></i><p>13</p></td>
+         <td style="padding-left: 20px;"><img src="images/Avalanche_Circle_RedWhite_Trans.webp" alt="bitcoin" width="20px" height="20px">
+           <span>Avalanche<span style="color: gray;">AVAX</span></span>
+         </td>
+         <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+         <td style="padding-left: 50px"><span>$35.05</span></td>
+         <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: rgb(240, 29, 40);"></i><span style="color: rgb(233, 37, 37);">1.1%</span></td>
+         <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: rgb(241, 39, 39);"></i><span style="color: rgb(253, 15, 15);">2.4%</span></td>
+         <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: rgb(223, 11, 11);"></i><span style="color: rgb(235, 8, 8);">3.6%</span></td>
+         <td style="padding-left: 50px"><span>$828,259,021</span></td>
+         <td style="padding-left: 50px"><span>$828,259,021</span></td>
+         <td style="padding-left: 50px"><img class="chart-img" src="https://www.coingecko.com/coins/12559/sparkline.svg" alt=""></td>
+      </tr>
+    </div>   
+      <div class="table-one">
+      <tr>
+         <td><i class="far fa-star"></i><p>13</p></td>
+         <td style="padding-left: 20px;"><img src="images/Avalanche_Circle_RedWhite_Trans.webp" alt="bitcoin" width="20px" height="20px">
+           <span>Avalanche<span style="color: gray;">AVAX</span></span>
+         </td>
+         <td style="padding-left: 50px"><button class="buybtn">Buy</button></td>
+         <td style="padding-left: 50px"><span>$35.05</span></td>
+         <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: rgb(240, 29, 40);"></i><span style="color: rgb(233, 37, 37);">1.1%</span></td>
+         <td style="padding-left: 50px"><i class="fa-solid fa-caret-down" style="color: rgb(241, 39, 39);"></i><span style="color: rgb(253, 15, 15);">2.4%</span></td>
+         <td style="padding-left: 50px"><i class="fa-solid fa-caret-up" style="color: rgb(223, 11, 11);"></i><span style="color: rgb(235, 8, 8);">3.6%</span></td>
+         <td style="padding-left: 50px"><span>$828,259,021</span></td>
+         <td style="padding-left: 50px"><span>$828,259,021</span></td>
+         <td style="padding-left: 50px"><img class="chart-img" src="https://www.coingecko.com/coins/12559/sparkline.svg" alt=""></td>
+      </tr>
+    </div>   
+    
+  </table> 
+
+    <div style="display: flex; justify-content: space-around; padding-top: 23px;">
+      <p>Showing 1 to 13 of 15371 results</p>
+      <div style="display: flex;">
+       <p style="color: green; background-color:#c5ebdb; border-radius: 3px; width: 20px;">1</p>
+        <p>2</p>
+        <p>...</p>
+        <p>  154</p>
+      </div>
+     <div style="padding-left: 98px;">
+      Rows <button style="width: 55px; background-color:#e2e4e9; height: 33px; border-radius: 11px; border: 2px solid #e2e4e9;">100</button>
+     </div>
+    </div>
+    <div style="padding: 10px; color: gray;">
+      Frequently Asked Questions <a href="#" style="text-decoration: underline;">Show</a>
+    </div>
+     <!--news-->
+    <div style="padding: 10px;">
+      <h2>Latest Crypto News</h2>
+    </div>
+
+    <div class="latest">
+      <div>
+        <img class="news-img" src="https://assets.coingecko.com/articles/images/2132183/large/bitcon-inflow-.jpg?1731945765">
+        <div class="news-text">Crypto funds see $2.2 billion inflow,<br> pushing 2024 total to $33.5 billion</div>
+  
+        <div class="crypto-slate">Crypto Slate</div>
+        <div class="minute">4 minutes ago</div>
+      </div>
+
+      <div style="padding-left: 22px;">
+        <img class="news-img" src="https://assets.coingecko.com/articles/images/2132152/large/Will-Sui-Price-Crash-To-1.20-As-Analyst-Spots-a-Bearish-Impulse.webp?1731945644">
+        <div class="news-text">Sui Price Is Up 930% From Its All-Time Low: <br> Can It Surge To $10?</div>
+  
+        <div class="crypto-slate">CoinGape</div>
+        <div class="minute">4 minutes ago</div>
+      </div>
+
+      <div style="padding-right: 25px;">
+        <img class="news-img" src="https://assets.coingecko.com/articles/images/2132993/large/a_dd7334.jpg?1731960132">
+        <div class="news-text">The Year Of Solana: 2024 Sees Global<br>Crypto LoveSurge Nearly 40%</div>
+  
+        <div class="crypto-slate"> NewsBTC</div>
+        <div class="minute">4 minutes ago</div>
+      </div>
+
+      <div style="padding-left: 8px;">
+        <img class="news-img" src="https://assets.coingecko.com/articles/images/2132994/large/Ethereum_Coins_31_03_Large.jpg?1731960135">
+        <div class="news-text">Ethereum Price Forecast: ETH risks <br> decline to $2,258 as exchange <br>reserves continue uptrend</div>
+  
+        <div class="crypto-slate"> FXStreet</div>
+        <div class="minute">4 minutes ago</div>
+      </div>
+    </div>
+    <div class="more-news"><p style=" background-color:  #e4ebf3; color: black; font-size: 1.3rem; border-radius: 10px; font-family: Arial, Helvetica, sans-serif;">See More News</p></div>
+     <!--articles-->
+    <div style="padding: 10px;">
+      <h2>Featured Articles</h2>
+    </div>
+
+    <div class="latest">
+      <div>
+        <img class="news-img" src="https://assets.coingecko.com/posts/images/864/large/Crypto_Narratives.png?1705486035">
+        <div class="update">Coverage</div>
+        <div class="news-text">What Are Crypto Narratives? Top <br> Narratives for 2025 (UPDATED)</div>
+        
+        <div class="crypto-slate">Josiah Makori</div>
+        <div class="minute"><i class="fa-solid fa-star" style="color: yellow;"></i> 4.27 (197 votes)</div>
+      </div>
+
+      <div style="padding-left: 10px;">
+        <img class="news-img" src="https://assets.coingecko.com/posts/images/769/large/Largest_Gainers_Q3_2024.png?1730281727">
+        <div class="update">Coverage</div>
+        <div class="news-text">Top 10 Largest Crypto Gainers of Q3 <br> 2024 (UPDATED)</div>
+  
+        <div class="crypto-slate">Josiah Makori</div>
+        <div class="minute"><i class="fa-solid fa-star" style="color: yellow;"></i> 4.43 (201 votes)</div>
+      </div>
+
+      <div style="padding-left: 15px;">
+        <img  class="news-img" src="https://assets.coingecko.com/posts/images/11494/large/What_Is_Goat_.png?1729840540">
+        <div class="update">Coins and Tokens</div>
+        <div class="news-text">What Is Goatseus Maximus? <br> The Rise <br> of AI Cult Coins</div>
+  
+        <div class="crypto-slate"> Loke Choon Khei</div>
+        <div class="minute"><i class="fa-solid fa-star" style="color: yellow;"></i> 3.9 (20 votes)</div>
+      </div>
+
+      <div style="padding-left: 15px;">
+        <img class="news-img"src="https://assets.coingecko.com/posts/images/11458/large/What_is_Pump.fun.png?1727407204">
+        <div class="update">Airdrops</div>
+        <div class="news-text">Pump.fun Guide: How to Create  <br> Your Own Memecoins and <br> Qualify for the Upcoming Airdrop</div>
+  
+        <div class="crypto-slate"> Loke Choon Khei</div>
+        <div class="minute"><i class="fa-solid fa-star" style="color: yellow;"></i>  4.21 (24 votes)</div>
+      </div>
+    </div>
+    <div class="more-news"><p style=" background-color:  #e4ebf3; color: black; font-size: 1.3rem; border-radius: 10px; font-family: Arial, Helvetica, sans-serif;">See More Articles</p></div>
+    <!--faqs-->
+    <div class="Faqs">
+      <div>
+        <img src="images/coingecko-logo-8903d34ce19ca4be1c81f0db30e924154750d208683fad7ae6f2ce06c76d0a56.webp" alt="">
+       <div style="margin-top: 20px; left: 30px;"><p>CoinGecko provides a fundamental analysis of the crypto market. In addition <br>to tracking price, volume and market capitalisation, CoinGecko tracks <br>community growth, open-source code development, major events and <br>on -chain metrics.</p></div>
+      </div>
+      <div class="Resources">Resources <br>
+        <p>Crypto News</p><br>
+        <p>Bitcoin Treasury</p><br> 
+        <p>Crypto Heatmap</p><br>
+        <p>Crypto API</p><br>
+        <div>Donations <br>
+          <p>Bitcoin</p><br>
+          <p>Ethereum</p>
+        </div>
+      </div>
+      <div class="Resources">Support <br>
+          <p>Request Form</p><br>
+          <p> Advertising</p><br>
+          <p>Candy <br> Reward Listing</p><br>
+          <p>Help Center</p><br>
+          <p>Bug Bounty</p><br>
+          <p>FAQ</p>
+      </div>
+      <div class="Resources">About CoinGecko <br>
+       <p>About Us</p> <br>
+       <p>Careers<p style="background-color: #e5eaf1; border-radius: 7px; color: rgb(45, 218, 45);">Join Us</p></p> <br>
+        <p>Company Blog</p> <br>
+        <p>Branding Guide</p> <br>
+        <p>Methodology</p> <br>
+        <p>Disclaimer</p><br>
+        <p>Terms of Service</p><br>
+        <p>Privacy Policy</p><br>
+        <p>Ad Policy</p><br>
+        <p>Cookie Preferences</p>
+      </div>
+      <div class="Resources">Community <br>
+        <p>X/Twitter</p> <br>
+        <p>Telegram Chat</p> <br>
+        <p>Telegram News</p> <br>
+        <p>Instagram</p> <br>
+        <p>Reddit</p><br>
+        <p>Discord</p><br>
+        <p>Facebook</p><br>
+        <p>Youtube</p><br>
+        <p>TikTok</p>
+      </div>
+    </div>
+    <!--interest-->
+    <div class="interest">
+     <div style="padding: 8px;">Interested to stay up-to-date with cryptocurrencies? <br>
+      <p>Get the latest crypto news, updates, and reports by subscribing to our free newsletter.</p>
+     </div> 
+     <div class="input" style="justify-content: end; padding-left: 400px;"><input style="height: 29px; border-radius: 8px; border: 2px solid lime;"  type="text" placeholder="Enter your email address"> <button style="height: 34px; width: 85px; color: #fff; background-color: lime; border-radius: 9px; border: 1px solid lime;">subscribe</button></div>   
+    </div>
+      
+    <!--footer-->
+    <div class="footer">
+      <div style="color: gray;">© 2024 CoinGecko. All Rights Reserved.</div>
+      <div class="img-foot"><img src="https://static.coingecko.com/s/coingecko_logos/google_play_store-cb1f298b04afa7f74639a948d9b2e22e4aa6eea9486a2b0442c2cf9bdcda63e8.svg" width="100px"></div>
+      <div><img src="https://static.coingecko.com/s/coingecko_logos/apple_app_store-558245a688cc13737dfb861fd82b252d75d5afbaf343c06e3067a454675bbe05.svg" width="100px"></div>
+    </div>
+
+     <div style="padding: 10px;"><a href="#" style="text-decoration: underline;">IMPORTANT DISCLAIMER:</a> 
+      <p>All content provided herein our website, hyperlinked sites, associated applications, forums, blogs, social media accounts and other platforms (“Site”) is for your general information only, procured from third party sources. We make no warranties of any kind in relation to our content, including but not limited to accuracy and updatedness. No part of the content that we provide constitutes financial advice, legal advice or any other form of advice meant for your specific reliance for any purpose. Any use or reliance on our content is solely at your own risk and discretion. You should conduct your own research, review, analyse and verify our content before relying on them. Trading is a highly risky activity that can lead to major losses, please therefore consult your financial advisor before making any decision. No content on our Site is meant to be a solicitation or offer.</p>
+    </div>
+    
+  </body>
+</html>

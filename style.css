@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+nav{
+    display: block;
+    height: 115px;
+}
+.nav-bar{
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.nav-bar,p,a{
+    display: inline;
+    flex-direction: column;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar,p{
+    color: gray;
+}
+
+a:hover{
+    color: green;
+}
+
+.nav-button{
+    display: inline;
+    flex-direction: column;
+    padding-left: 200px;
+    /* padding-top: -10px; */
+    /* margin-bottom: 10px; */
+    /* padding-bottom: 5px; */
+}
+
+#btn1{
+    border-radius: 10px;
+    width: 30px;
+    height: 32px;
+    border: 1px solid gray;
+    top: 10px;
+    position: relative;
+}
+
+#btn2{
+    border-radius: 10px;
+    width: 32px;
+    height: 35px;
+    position: relative;
+    border: 1px solid gray;
+}
+
+#btn3{
+    background-color: rgb(17, 131, 17);
+    border-radius: 10px;
+    width: 33px;
+    position: relative;
+    height: 36px;
+    top: 8px;
+    color: white;
+}
+.crypto-menu{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 10px;
+    width: 10%;
+    height: 20px;
+}
+.menu{
+    display: flex;
+    position: relative;
+}
+
+.crypto-link{
+    display: flex;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.coingecko-icon{
+    display: flex;
+    /* padding: 2px; */
+    /* position: relative; */
+    justify-content: last baseline;
+    padding-left: 350px;
+    cursor: pointer;
+}
+
+.coingecko-icon input{
+    background-color: lightgray;
+    border-radius: 8px;
+    padding-left: 15px;
+}
+
+.coingecko-icon input:focus{
+    outline: none;
+}
+
+.high{
+    display: inline;
+    padding-left: 350px;
+    color: black;
+}
+.price{
+    display: inline;
+}
+.high{
+    display: flex;
+    padding-left: 1150px;
+    margin-top: -40px;
+    /* padding-top: -50px; */
+    justify-content: space-around;
+}
+
+.main{
+    display: inline-flex;
+    padding: 20px;
+    /* flex: 12px; */
+    position: relative;
+    top: 22px;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.main-head:hover{
+   background-color: rgb(240, 237, 237);
+   border-radius: 10px;
+
+}
+
+.table-head{
+    display: flex;
+    position: relative;
+    padding: 12px;
+}
+
+.table-one{
+    display: inline;
+    position: relative;
+    padding: 12px;
+}
+
+.buybtn {
+    width: 50px;
+    color: lime;
+    font-weight: 400;
+    background-color: white;
+    line-height: 1.25rem;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 1.5px solid limegreen;
+}
+
+.chart-img {
+    height: 45px;
+    padding: 10px;
+}
+
+.latest{
+    display: flex;
+    padding: 15px;
+}
+
+.news-img {
+width: 300px;
+height: 150px;
+border-radius: 12px;
+}
+
+.news-text {
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.crypto-slate{
+    margin-bottom: 0.25rem;
+    color: #4b5563;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+}
+
+.minute{
+    font-weight: normal;
+    color: #6b7280;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+}
+
+.more-news{
+    display: flex;
+    justify-content: center;  
+    padding-top: 15px;
+}
+
+.update{
+    margin-bottom: 0.25rem;
+    color: #4b5563;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+}
+
+.Faqs{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.Resources{
+    padding: 10px;
+    display: block;
+}
+
+.interest{
+    display: flex;
+    padding-top: 35px;
+}
+
+.input{
+    padding-top: 20px;
+}
+.input input:focus{
+    padding-left: 15px;
+}
+.input input{
+    outline: none;
+}
+
+.footer{
+    display: flex;
+    padding: 10px;
+    top: 70px;
+}
+.img-foot{
+    padding-left: 770px;
+}
